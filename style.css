@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(9, 9, 51, 0.568);
+}
+
+.column-of-6 {
+    margin: auto;
+    min-width:min-content;
+}
+
+.card {
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+
+.heading {
+    background-color: rgba(32, 32, 98, 0.596);
+    margin: 30px 200px;
+    -moz-box-shadow:    1px 2px 2px 2px #ccc;
+    -webkit-box-shadow: 1px 2px 2px 2px #ccc;
+    box-shadow:         1px 2px 2px 2px #ccc;
+}
+
+.form-group {
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.form-control {
+    height: 40px;
+    width: 400px;
+    align-self: center;
+    box-shadow: rgba(32, 32, 98, 0.596);
+    -webkit-box-shadow: 1px 2px 2px 2px rgba(32, 32, 98, 0.596);
+    box-shadow: 1px 2px 2px 2px rgba(32, 32, 98, 0.596);
+}
+
+form {
+    -moz-box-shadow:    1px 2px 2px 2px #ccc;
+    -webkit-box-shadow: 1px 2px 2px 2px #ccc;
+    box-shadow:         1px 2px 2px 2px #ccc;
+    margin: 30px 200px;
+}
+
+.btn {
+    height: 40px;
+    width: 400px;
+    align-self: center;
+    background-color: rgba(32, 32, 98, 0.596);
+    -moz-box-shadow:    1px 2px 2px 2px #ccc;
+    -webkit-box-shadow: 1px 2px 2px 2px #ccc;
+    box-shadow:         1px 2px 2px 2px #ccc;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.btn:hover {
+    background-color: rgba(59, 59, 151, 0.373);
+    transition: 0.7s;
+}
+
+.results {
+    padding-top: 3%;
+}
+
+.alert {
+    background-color: rgba(230, 11, 11, 0.24);
+    margin: 30px 200px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#loading, #results {
+    display: none;
+}
+
+input {
+    font-size: 18px;
+}

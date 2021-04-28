@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column-of-6">
+                <div class="card">
+                    <h1 class="heading">KALKULATOR POŻYCZEK</h1>
+                    <form id="loan-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="amount" placeholder="kwota pożyczki"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="interest" placeholder="procent"> 
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <input type="number" class="form-control" id="years" placeholder="lata do spłaty"> 
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="oblicz" class="btn">
+                        </div>
+                    </form>
+
+                    <div id="loading">
+                        <img src="img/60624850_60x60.gif" alt="loading image">
+                    </div>
+
+                    <div class="results" id="results">
+                        <h1 class="heading">TWOJE RATY</h1>
+                        <div class="form-group">
+                            <span>rata miesięczna</span>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="monthly-payment" disabled> 
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span>kwota całkowita</span>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="total-payment" disabled> 
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span>prowizja</span>
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="total-interest" disabled> 
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
